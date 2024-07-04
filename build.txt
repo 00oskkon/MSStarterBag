@@ -1,0 +1,9 @@
+displayName = Magic Storage Starter Bag
+author = Oskarien
+version = 1.0
+hideCode = false
+hideResources = false
+includeSource = true
+includePDB = true
+modReferences = MagicStorage
+sortAfter = MagicStorage

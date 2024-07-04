@@ -1,0 +1,6 @@
+Items: {
+	StarterBag: {
+		DisplayName: Starter Bag
+		Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+	}
+}
