@@ -1,1 +1,3 @@
+GitHub: https://github.com/00oskkon/MSStarterBag
+
 Adds a starterbag with Magic Storage items to help you
