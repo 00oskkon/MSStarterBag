@@ -1,2 +1,5 @@
+1.1
+Added a config to change the amount of StorageUnits 
+
 1.0
 Initial release

@@ -4,3 +4,14 @@ Items: {
 		Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
 	}
 }
+
+Configs: {
+	BagConfig: {
+		StorageUnitAmount: {
+			Tooltip: ""
+			Label: Storage Unit Amount
+		}
+
+		DisplayName: Bag Config
+	}
+}

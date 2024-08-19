@@ -1,0 +1,103 @@
+diff --git a/Items/StarterBag.cs b/Items/StarterBag.cs
+index 58ae3f5..36cd4e7 100644
+--- a/Items/StarterBag.cs
++++ b/Items/StarterBag.cs
+@@ -1,10 +1,13 @@
+ // Add MagicStorage usage
+ using MagicStorage;
+ using MagicStorage.Items;
++using System.Collections.Generic;
++using Microsoft.Xna.Framework;
+ using Terraria;
+ using Terraria.GameContent.ItemDropRules;
+ using Terraria.ID;
+ using Terraria.ModLoader;
++using MSStarterBag.Common.Configs;
+ 
+ namespace MSStarterBag.Items
+ {
+@@ -29,6 +32,21 @@ namespace MSStarterBag.Items
+ 			return true;
+ 		}
+ 
++		public override void RightClick(Player player) {
++			List<Item> storage = new();
++			storage.Add(new(ModContent.ItemType<StorageHeart>()));
++			storage.Add(new(ModContent.ItemType<CraftingAccess>()));
++
++			for (int i = 0; i < BagConfig.Instance.StorageUnitAmount; i++) {
++				storage.Add(new(ModContent.ItemType<StorageUnit>()));
++			}
++
++			foreach (Item item in storage) player.QuickSpawnItem(Item.GetSource_Loot(), item);
++
++			Item.TurnToAir();
++		}
++
++		/*
+ 		// Change the loot of the starter bag
+ 		public override void ModifyItemLoot(ItemLoot itemLoot) {
+ 			// Add the StorageHeart
+@@ -36,7 +54,7 @@ namespace MSStarterBag.Items
+ 			// Add the CraftingAccess
+ 			itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<CraftingAccess>()));
+ 			// Add the StorageUnit
+-			itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<StorageUnit>()));
+-		}
++			itemLoot.Add(ItemDropRule.NotScalingWithLuck(ModContent.ItemType<StorageUnit>(), 1, BagConfig.Instance.StorageUnitAmount, BagConfig.Instance.StorageUnitAmount));
++		} */
+ 	}
+ }
+\ No newline at end of file
+diff --git a/Localization/en-US_Mods.MSStarterBag.hjson b/Localization/en-US_Mods.MSStarterBag.hjson
+index f5c5c48..0905734 100644
+--- a/Localization/en-US_Mods.MSStarterBag.hjson
++++ b/Localization/en-US_Mods.MSStarterBag.hjson
+@@ -4,3 +4,14 @@ Items: {
+ 		Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+ 	}
+ }
++
++Configs: {
++	BagConfig: {
++		StorageUnitAmount: {
++			Tooltip: ""
++			Label: Storage Unit Amount
++		}
++
++		DisplayName: Bag Config
++	}
++}
+diff --git a/build.txt b/build.txt
+index bcbef9c..e5741f5 100644
+--- a/build.txt
++++ b/build.txt
+@@ -1,6 +1,6 @@
+ displayName = Magic Storage Starter Bag
+ author = Oskarien
+-version = 1.0
++version = 2.0
+ hideCode = false
+ hideResources = false
+ includeSource = true
+diff --git a/changelog.txt b/changelog.txt
+index e8b26e1..b78750e 100644
+--- a/changelog.txt
++++ b/changelog.txt
+@@ -1,2 +1,5 @@
++1.1
++Added a config to change the amount of StorageUnits 
++
+ 1.0
+ Initial release
+\ No newline at end of file
+diff --git a/description_workshop.txt b/description_workshop.txt
+index 06c4700..a5bd016 100644
+--- a/description_workshop.txt
++++ b/description_workshop.txt
+@@ -1,3 +1,4 @@
+ GitHub: https://github.com/00oskkon/MSStarterBag
+ 
+ Adds a starterbag with Magic Storage items to help you
++Has a configurable amount of StorageUnits to start with 
+\ No newline at end of file
