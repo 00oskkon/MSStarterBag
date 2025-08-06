@@ -110,16 +110,5 @@ namespace MSStarterBag.Items
 			// Remove the 'bag' item
 			Item.TurnToAir();
 		}
-
-		/*
-		// Change the loot of the starter bag
-		public override void ModifyItemLoot(ItemLoot itemLoot) {
-			// Add the StorageHeart
-			itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<StorageHeart>()));
-			// Add the CraftingAccess
-			itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<CraftingAccess>()));
-			// Add the StorageUnit
-			itemLoot.Add(ItemDropRule.NotScalingWithLuck(ModContent.ItemType<StorageUnit>(), 1, BagConfig.Instance.StorageUnitAmount, BagConfig.Instance.StorageUnitAmount));
-		} */
 	}
 }
