@@ -10,6 +10,5 @@ namespace MSStarterBag
 {
 	public class MSStarterBag : Mod
 	{
-		
 	}
 }
