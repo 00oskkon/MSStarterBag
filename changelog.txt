@@ -1,3 +1,15 @@
+3.0
+Removed forced reload after config changes
+Better descriptions for the config with tooltips
+Changed the max amount of configurable Storage Units from 10 to 99
+Added configuration for Storage Heart and Crafting Access
+Added configuration for Storage Upgrades, from Crimtane to Terra, from 0 to 100
+Added configuration for Shadow Diamonds
+Added configuration for Storage Components
+
+2.0
+Release
+
 1.1
 Added a config to change the amount of StorageUnits 
 

@@ -1,4 +1,15 @@
 GitHub: https://github.com/00oskkon/MSStarterBag
 
-Adds a starterbag with Magic Storage items to help you
-Has a configurable amount of StorageUnits to start with 
+🎉 Get Ready for a Magical Storage Adventure! 🎉
+
+    Kickstart Your Journey: Dive into the fun with a starter bag packed full of Magic Storage goodies to give you a head start!
+
+    Choose Your Storage Units: You can customize your adventure with Storage Units ranging from 0 to 99 but hey, the default is 2 to get you rolling!
+
+    Heart and Crafting Fun: Want a little extra magic? You can add a Storage Heart and/or a Crafting Interface. Default is set to On!
+
+    Upgrade Your Storage Game: Level up your storage with Storage Upgrades from Crimtane to Terra! You can configure anywhere from 0 to 99 upgrades, but the default is 0.
+
+    Shadow Diamonds Galore: How many Shadow Diamonds do you want? You can set it to your liking between 0 to 99, but the default is 0!
+
+    Storage Components: Need some components? You can configure the amount from 0 to 99, with the default being 0!
