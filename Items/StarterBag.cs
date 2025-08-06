@@ -51,6 +51,12 @@ namespace MSStarterBag.Items
 				storage.Add(new(ModContent.ItemType<StorageUnit>()));
 			}
 
+			if (BagConfig.Instance.CrimtaneAmount > 0) {
+				for (int i = 0; i < BagConfig.Instance.CrimtaneAmount; i++) {
+					storage.Add(new(ModContent.ItemType<UpgradeCrimtane>()));
+				}
+			}
+
 			// Add all the items from the list
 			foreach (Item item in storage) player.QuickSpawnItem(Item.GetSource_Loot(), item);
 

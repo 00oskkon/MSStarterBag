@@ -23,10 +23,6 @@ namespace MSStarterBag.Common.Configs
 		[DefaultValue(2)]
 		public int StorageUnitAmount { get; set; }
 
-		internal void ClampValues(StreamingContext context) {
-			StorageUnitAmount = (int)Utils.Clamp(StorageUnitAmount, minStorageUnitAmount, maxStorageUnitAmount);
-		}
-
 		// Storage heart
 		[DefaultValue(true)]
 		public bool GetStorageHeart;
@@ -34,5 +30,19 @@ namespace MSStarterBag.Common.Configs
 		// Crafting Access
 		[DefaultValue(true)]
 		public bool GetCraftingAccess;
+
+		// Crimtane storage upgrade
+		private const int minCrimtaneAmount = 0;
+		private const int maxCrimtaneAmount = 99;
+		
+		[Increment(1)]
+		[Range(minCrimtaneAmount, maxCrimtaneAmount)]
+		[DefaultValue(0)]
+		public int CrimtaneAmount { get; set; }
+		
+		internal void ClampValues(StreamingContext context) {
+			StorageUnitAmount = (int)Utils.Clamp(StorageUnitAmount, minStorageUnitAmount, maxStorageUnitAmount);
+			CrimtaneAmount = (int)Utils.Clamp(CrimtaneAmount, minCrimtaneAmount, maxCrimtaneAmount);
+		}
 	}
 }

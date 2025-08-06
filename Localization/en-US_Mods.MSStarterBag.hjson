@@ -23,5 +23,10 @@ Configs: {
 			Label: Get Crafting Interface
 			Tooltip: If you get a Crafting Interface
 		}
+
+		CrimtaneAmount: {
+			Label: Crimtane Storage Upgrade Amount
+			Tooltip: Amount of Crimtane Storage Upgrades you get
+		}
 	}
 }
