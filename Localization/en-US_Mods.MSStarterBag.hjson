@@ -62,6 +62,7 @@ Configs: {
 		ShadowDiamondAmount: {
 			Label: Shadow Diamond Amount
 			Tooltip: Amount of Shadow Diamonds you get
+		}
 
 		ComponentAmount: {
 			Label: Storage Component Amount
