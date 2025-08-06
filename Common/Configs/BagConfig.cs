@@ -16,7 +16,7 @@ namespace MSStarterBag.Common.Configs
 
 		// Storage units
 		private const int minStorageUnitAmount = 1;
-		private const int maxStorageUnitAmount = 10;
+		private const int maxStorageUnitAmount = 99;
 		
 		[Increment(1)]
 		[Range(minStorageUnitAmount, maxStorageUnitAmount)]
