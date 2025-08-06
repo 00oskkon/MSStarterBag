@@ -106,6 +106,20 @@ namespace MSStarterBag.Items
 				}
 			}
 
+			// Add the configured amounts of Shadow Diamonds to the list
+			if (BagConfig.Instance.ShadowDiamondAmount > 0) {
+				for (int i = 0; i < BagConfig.Instance.ShadowDiamondAmount; i++) {
+					storage.Add(new(ModContent.ItemType<ShadowDiamond>()));
+				}
+			}
+
+			// Add the configured amounts of Storage Components to the list
+			if (BagConfig.Instance.ComponentAmount > 0) {
+				for (int i = 0; i < BagConfig.Instance.ComponentAmount; i++) {
+					storage.Add(new(ModContent.ItemType<StorageComponent>()));
+				}
+			}
+
 			// Add all the items from the list
 			foreach (Item item in storage) player.QuickSpawnItem(Item.GetSource_Loot(), item);
 

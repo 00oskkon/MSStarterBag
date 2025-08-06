@@ -58,5 +58,14 @@ Configs: {
 			Label: Terra Storage Upgrade Amount
 			Tooltip: Amount of Terra Storage Upgrades you get
 		}
+
+		ShadowDiamondAmount: {
+			Label: Shadow Diamond Amount
+			Tooltip: Amount of Shadow Diamonds you get
+
+		ComponentAmount: {
+			Label: Storage Component Amount
+			Tooltip: Amount of Storage Components you get
+		}
 	}
 }

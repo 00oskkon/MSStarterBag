@@ -86,6 +86,22 @@ namespace MSStarterBag.Common.Configs
 		[Range(minTerraAmount, maxTerraAmount)]
 		[DefaultValue(0)]
 		public int TerraAmount { get; set; }
+
+		// Shadow Diamond
+		private const int minShadowDiamondAmount = 0;
+		private const int maxShadowDiamondAmount = 99;
+		[Increment(1)]
+		[Range(minShadowDiamondAmount, maxShadowDiamondAmount)]
+		[DefaultValue(0)]
+		public int ShadowDiamondAmount { get; set; }
+
+		// Storage Component
+		private const int minComponentAmount = 0;
+		private const int maxComponentAmount = 99;
+		[Increment(1)]
+		[Range(minComponentAmount, maxComponentAmount)]
+		[DefaultValue(0)]
+		public int ComponentAmount { get; set; }
 		
 		internal void ClampValues(StreamingContext context) {
 			StorageUnitAmount = (int)Utils.Clamp(StorageUnitAmount, minStorageUnitAmount, maxStorageUnitAmount);
@@ -96,6 +112,8 @@ namespace MSStarterBag.Common.Configs
 			ChlorophyteAmount = (int)Utils.Clamp(ChlorophyteAmount, minChlorophyteAmount, maxChlorophyteAmount);
 			LuminiteAmount = (int)Utils.Clamp(LuminiteAmount, minLuminiteAmount, maxLuminiteAmount);
 			TerraAmount = (int)Utils.Clamp(TerraAmount, minTerraAmount, maxTerraAmount);
+			ShadowDiamondAmount = (int)Utils.Clamp(ShadowDiamondAmount, minShadowDiamondAmount, maxShadowDiamondAmount);
+			ComponentAmount = (int)Utils.Clamp(ComponentAmount, minComponentAmount, maxComponentAmount);
 		}
 	}
 }
