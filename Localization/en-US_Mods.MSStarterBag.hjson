@@ -7,12 +7,12 @@ Items: {
 
 Configs: {
 	BagConfig: {
-		StorageUnitAmount: {
-			Tooltip: Amount of Storage Units you get
-			Label: Storage Unit Amount
-		}
-
 		DisplayName: Bag Config
+
+		StorageUnitAmount: {
+			Label: Storage Unit Amount
+			Tooltip: Amount of Storage Units you get
+		}
 
 		GetStorageHeart: {
 			Label: Get Storage Heart
