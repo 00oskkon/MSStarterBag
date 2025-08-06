@@ -12,7 +12,7 @@ namespace MSStarterBag.Common.Configs
 	{
 		public static BagConfig Instance;
 
-		public override ConfigScope Mode => ConfigScope.ServerSide;
+		public override ConfigScope Mode => ConfigScope.ClientSide;
 
 		private const int minStorageUnitAmount = 1;
 		private const int maxStorageUnitAmount = 10;
@@ -20,7 +20,6 @@ namespace MSStarterBag.Common.Configs
 		[Increment(1)]
 		[Range(minStorageUnitAmount, maxStorageUnitAmount)]
 		[DefaultValue(2)]
-		[ReloadRequired]
 		public int StorageUnitAmount { get; set; }
 
 		internal void ClampValues(StreamingContext context) {
