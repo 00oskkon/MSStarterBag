@@ -46,6 +46,10 @@ namespace MSStarterBag.Items
 				storage.Add(new(ModContent.ItemType<CraftingAccess>()));
 			}
 
+			// Warning!
+			// Everything below looks like crap
+			// I might clean it up...
+
 			// Add the configured amounts of Storage Units to the list
 			for (int i = 0; i < BagConfig.Instance.StorageUnitAmount; i++) {
 				storage.Add(new(ModContent.ItemType<StorageUnit>()));
@@ -55,6 +59,48 @@ namespace MSStarterBag.Items
 			if (BagConfig.Instance.CrimtaneAmount > 0) {
 				for (int i = 0; i < BagConfig.Instance.CrimtaneAmount; i++) {
 					storage.Add(new(ModContent.ItemType<UpgradeCrimtane>()));
+				}
+			}
+
+			// Add the configured amounts of Demonite Storage Upgrades to the list
+			if (BagConfig.Instance.DemoniteAmount > 0) {
+				for (int i = 0; i < BagConfig.Instance.DemoniteAmount; i++) {
+					storage.Add(new(ModContent.ItemType<UpgradeDemonite>()));
+				}
+			}
+
+			// Add the configured amounts of Hellstone Storage Upgrades to the list
+			if (BagConfig.Instance.HellstoneAmount > 0) {
+				for (int i = 0; i < BagConfig.Instance.HellstoneAmount; i++) {
+					storage.Add(new(ModContent.ItemType<UpgradeHellstone>()));
+				}
+			}
+
+			// Add the configured amounts of Hallowed Storage Upgrades to the list
+			if (BagConfig.Instance.HallowedAmount > 0) {
+				for (int i = 0; i < BagConfig.Instance.HallowedAmount; i++) {
+					storage.Add(new(ModContent.ItemType<UpgradeHallowed>()));
+				}
+			}
+
+			// Add the configured amounts of Blue Chlorophyte Storage Upgrades to the list
+			if (BagConfig.Instance.ChlorophyteAmount > 0) {
+				for (int i = 0; i < BagConfig.Instance.ChlorophyteAmount; i++) {
+					storage.Add(new(ModContent.ItemType<UpgradeBlueChlorophyte>()));
+				}
+			}
+
+			// Add the configured amounts of Luminite Storage Upgrades to the list
+			if (BagConfig.Instance.LuminiteAmount > 0) {
+				for (int i = 0; i < BagConfig.Instance.LuminiteAmount; i++) {
+					storage.Add(new(ModContent.ItemType<UpgradeLuminite>()));
+				}
+			}
+
+			// Add the configured amounts of Terra Storage Upgrades to the list
+			if (BagConfig.Instance.TerraAmount > 0) {
+				for (int i = 0; i < BagConfig.Instance.TerraAmount; i++) {
+					storage.Add(new(ModContent.ItemType<UpgradeTerra>()));
 				}
 			}
 

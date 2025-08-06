@@ -28,5 +28,35 @@ Configs: {
 			Label: Crimtane Storage Upgrade Amount
 			Tooltip: Amount of Crimtane Storage Upgrades you get
 		}
+
+		DemoniteAmount: {
+			Label: Demonite Storage Upgrade Amount
+			Tooltip: Amount of Demonite Storage Upgrades you get
+		}
+
+		HellstoneAmount: {
+			Label: Hellstone Storage Upgrade Amount
+			Tooltip: Amount of Hellstone Storage Upgrades you get
+		}
+
+		HallowedAmount: {
+			Label: Hallowed Storage Upgrade Amount
+			Tooltip: Amount of Hallowed Storage Upgrades you get
+		}
+
+		ChlorophyteAmount: {
+			Label: Blue Chlorophyte Storage Upgrade Amount
+			Tooltip: Amount of Blue Chlorophyte Storage Upgrades you get
+		}
+
+		LuminiteAmount: {
+			Label: Luminite Storage Upgrade Amount
+			Tooltip: Amount of Luminite Storage Upgrades you get
+		}
+
+		TerraAmount: {
+			Label: Terra Storage Upgrade Amount
+			Tooltip: Amount of Terra Storage Upgrades you get
+		}
 	}
 }
