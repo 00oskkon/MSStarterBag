@@ -32,22 +32,29 @@ namespace MSStarterBag.Items
 			return true;
 		}
 
+		// When you right click the item
 		public override void RightClick(Player player) {
+			// A list of the items to give the player
 			List<Item> storage = new();
 
+			// Check the config if the player should get a Storage Heart and add to the list
 			if (BagConfig.Instance.GetStorageHeart) {
 				storage.Add(new(ModContent.ItemType<StorageHeart>()));
 			}
+			// Check the config if the player should get a Crafting Interface and add to the list
 			if (BagConfig.Instance.GetCraftingAccess) {
 				storage.Add(new(ModContent.ItemType<CraftingAccess>()));
 			}
 
+			// Add the configured amounts of Storage Units to the list
 			for (int i = 0; i < BagConfig.Instance.StorageUnitAmount; i++) {
 				storage.Add(new(ModContent.ItemType<StorageUnit>()));
 			}
 
+			// Add all the items from the list
 			foreach (Item item in storage) player.QuickSpawnItem(Item.GetSource_Loot(), item);
 
+			// Remove the 'bag' item
 			Item.TurnToAir();
 		}
 
