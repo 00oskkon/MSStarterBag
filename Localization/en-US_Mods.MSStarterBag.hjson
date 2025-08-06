@@ -8,10 +8,20 @@ Items: {
 Configs: {
 	BagConfig: {
 		StorageUnitAmount: {
-			Tooltip: ""
+			Tooltip: Amount of Storage Units you get
 			Label: Storage Unit Amount
 		}
 
 		DisplayName: Bag Config
+
+		GetStorageHeart: {
+			Label: Get Storage Heart
+			Tooltip: If you get a Storage Heart
+		}
+
+		GetCraftingAccess: {
+			Label: Get Crafting Interface
+			Tooltip: If you get a Crafting Interface
+		}
 	}
 }

@@ -34,8 +34,13 @@ namespace MSStarterBag.Items
 
 		public override void RightClick(Player player) {
 			List<Item> storage = new();
-			storage.Add(new(ModContent.ItemType<StorageHeart>()));
-			storage.Add(new(ModContent.ItemType<CraftingAccess>()));
+
+			if (BagConfig.Instance.GetStorageHeart) {
+				storage.Add(new(ModContent.ItemType<StorageHeart>()));
+			}
+			if (BagConfig.Instance.GetCraftingAccess) {
+				storage.Add(new(ModContent.ItemType<CraftingAccess>()));
+			}
 
 			for (int i = 0; i < BagConfig.Instance.StorageUnitAmount; i++) {
 				storage.Add(new(ModContent.ItemType<StorageUnit>()));

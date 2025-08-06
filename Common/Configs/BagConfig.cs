@@ -14,6 +14,7 @@ namespace MSStarterBag.Common.Configs
 
 		public override ConfigScope Mode => ConfigScope.ServerSide;
 
+		// Storage units
 		private const int minStorageUnitAmount = 1;
 		private const int maxStorageUnitAmount = 10;
 		
@@ -25,5 +26,13 @@ namespace MSStarterBag.Common.Configs
 		internal void ClampValues(StreamingContext context) {
 			StorageUnitAmount = (int)Utils.Clamp(StorageUnitAmount, minStorageUnitAmount, maxStorageUnitAmount);
 		}
+
+		// Storage heart
+		[DefaultValue(true)]
+		public bool GetStorageHeart;
+
+		// Crafting Access
+		[DefaultValue(true)]
+		public bool GetCraftingAccess;
 	}
 }
