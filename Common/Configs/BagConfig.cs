@@ -12,7 +12,7 @@ namespace MSStarterBag.Common.Configs
 	{
 		public static BagConfig Instance;
 
-		public override ConfigScope Mode => ConfigScope.ClientSide;
+		public override ConfigScope Mode => ConfigScope.ServerSide;
 
 		private const int minStorageUnitAmount = 1;
 		private const int maxStorageUnitAmount = 10;
