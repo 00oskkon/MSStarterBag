@@ -51,8 +51,10 @@ namespace MSStarterBag.Items
 			// I might clean it up...
 
 			// Add the configured amounts of Storage Units to the list
-			for (int i = 0; i < BagConfig.Instance.StorageUnitAmount; i++) {
-				storage.Add(new(ModContent.ItemType<StorageUnit>()));
+			if (BagConfig.Instance.StorageUnitAmount > 0) {
+				for (int i = 0; i < BagConfig.Instance.StorageUnitAmount; i++) {
+					storage.Add(new(ModContent.ItemType<StorageUnit>()));
+				}
 			}
 
 			// Add the configured amounts of Crimtane Storage Upgrades to the list

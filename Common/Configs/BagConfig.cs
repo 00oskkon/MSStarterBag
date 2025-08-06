@@ -15,7 +15,7 @@ namespace MSStarterBag.Common.Configs
 		public override ConfigScope Mode => ConfigScope.ServerSide;
 
 		// Storage units
-		private const int minStorageUnitAmount = 1;
+		private const int minStorageUnitAmount = 0;
 		private const int maxStorageUnitAmount = 99;
 		
 		[Increment(1)]
