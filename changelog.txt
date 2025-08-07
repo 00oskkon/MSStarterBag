@@ -1,3 +1,7 @@
+3.1
+Increase clarity of the config menu with icons and headers
+Refactored the code
+
 3.0
 Removed forced reload after config changes
 Better descriptions for the config with tooltips
