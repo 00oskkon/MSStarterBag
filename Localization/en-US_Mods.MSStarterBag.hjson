@@ -9,63 +9,63 @@ Configs: {
 	BagConfig: {
 		DisplayName: Bag Config
 
-		StorageUnitAmount: {
-			Label: Storage Unit Amount
-			Tooltip: Amount of Storage Units you get
-		}
-
 		GetStorageHeart: {
-			Label: Get Storage Heart
+			Label: "[i:MagicStorage/StorageHeart] Get Storage Heart"
 			Tooltip: If you get a Storage Heart
 		}
 
 		GetCraftingAccess: {
-			Label: Get Crafting Interface
+			Label: "[i:MagicStorage/CraftingAccess] Get Crafting Interface"
 			Tooltip: If you get a Crafting Interface
 		}
 
+		StorageUnitAmount: {
+			Label: "[i:MagicStorage/StorageUnit] Storage Unit Amount"
+			Tooltip: Amount of Storage Units you get
+		}
+
 		CrimtaneAmount: {
-			Label: Crimtane Storage Upgrade Amount
+			Label: "[i:MagicStorage/UpgradeCrimtane] Crimtane Storage Upgrade Amount"
 			Tooltip: Amount of Crimtane Storage Upgrades you get
 		}
 
 		DemoniteAmount: {
-			Label: Demonite Storage Upgrade Amount
+			Label: "[i:MagicStorage/UpgradeDemonite] Demonite Storage Upgrade Amount"
 			Tooltip: Amount of Demonite Storage Upgrades you get
 		}
 
 		HellstoneAmount: {
-			Label: Hellstone Storage Upgrade Amount
+			Label: "[i:MagicStorage/UpgradeHellstone] Hellstone Storage Upgrade Amount"
 			Tooltip: Amount of Hellstone Storage Upgrades you get
 		}
 
 		HallowedAmount: {
-			Label: Hallowed Storage Upgrade Amount
+			Label: "[i:MagicStorage/UpgradeHallowed] Hallowed Storage Upgrade Amount"
 			Tooltip: Amount of Hallowed Storage Upgrades you get
 		}
 
 		ChlorophyteAmount: {
-			Label: Blue Chlorophyte Storage Upgrade Amount
+			Label: "[i:MagicStorage/UpgradeBlueChlorophyte] Blue Chlorophyte Storage Upgrade Amount"
 			Tooltip: Amount of Blue Chlorophyte Storage Upgrades you get
 		}
 
 		LuminiteAmount: {
-			Label: Luminite Storage Upgrade Amount
+			Label: "[i:MagicStorage/UpgradeLuminite] Luminite Storage Upgrade Amount"
 			Tooltip: Amount of Luminite Storage Upgrades you get
 		}
 
 		TerraAmount: {
-			Label: Terra Storage Upgrade Amount
+			Label: "[i:MagicStorage/UpgradeTerra] Terra Storage Upgrade Amount"
 			Tooltip: Amount of Terra Storage Upgrades you get
 		}
 
 		ShadowDiamondAmount: {
-			Label: Shadow Diamond Amount
+			Label: "[i:MagicStorage/ShadowDiamond] Shadow Diamond Amount"
 			Tooltip: Amount of Shadow Diamonds you get
 		}
 
 		ComponentAmount: {
-			Label: Storage Component Amount
+			Label: "[i:MagicStorage/StorageComponent] Storage Component Amount"
 			Tooltip: Amount of Storage Components you get
 		}
 	}
