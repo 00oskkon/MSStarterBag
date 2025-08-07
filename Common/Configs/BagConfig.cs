@@ -14,6 +14,14 @@ namespace MSStarterBag.Common.Configs
 
 		public override ConfigScope Mode => ConfigScope.ServerSide;
 
+		// Storage heart
+		[DefaultValue(true)]
+		public bool GetStorageHeart;
+
+		// Crafting Access
+		[DefaultValue(true)]
+		public bool GetCraftingAccess;
+
 		// Storage units
 		private const int minStorageUnitAmount = 0;
 		private const int maxStorageUnitAmount = 99;
@@ -22,14 +30,6 @@ namespace MSStarterBag.Common.Configs
 		[Range(minStorageUnitAmount, maxStorageUnitAmount)]
 		[DefaultValue(2)]
 		public int StorageUnitAmount { get; set; }
-
-		// Storage heart
-		[DefaultValue(true)]
-		public bool GetStorageHeart;
-
-		// Crafting Access
-		[DefaultValue(true)]
-		public bool GetCraftingAccess;
 
 		// Crimtane storage upgrade
 		private const int minCrimtaneAmount = 0;
