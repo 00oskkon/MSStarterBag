@@ -68,5 +68,17 @@ Configs: {
 			Label: "[i:MagicStorage/StorageComponent] Storage Component Amount"
 			Tooltip: Amount of Storage Components you get
 		}
+
+		Headers: {
+			Configs: {
+				BagConfig: {
+					Headers: {
+						StorageUpgrades: Storage Upgrades
+						Basic: Basic
+						Extra: Extra
+					}
+				}
+			}
+		}
 	}
 }

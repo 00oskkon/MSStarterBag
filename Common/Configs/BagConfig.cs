@@ -15,6 +15,7 @@ namespace MSStarterBag.Common.Configs
 		public override ConfigScope Mode => ConfigScope.ServerSide;
 
 		// Storage heart
+		[Header($"Configs.BagConfig.Headers.Basic")]
 		[DefaultValue(true)]
 		public bool GetStorageHeart;
 
@@ -34,6 +35,7 @@ namespace MSStarterBag.Common.Configs
 		// Crimtane storage upgrade
 		private const int minCrimtaneAmount = 0;
 		private const int maxCrimtaneAmount = 99;
+		[Header($"Configs.BagConfig.Headers.StorageUpgrades")]
 		[Increment(1)]
 		[Range(minCrimtaneAmount, maxCrimtaneAmount)]
 		[DefaultValue(0)]
@@ -90,6 +92,7 @@ namespace MSStarterBag.Common.Configs
 		// Shadow Diamond
 		private const int minShadowDiamondAmount = 0;
 		private const int maxShadowDiamondAmount = 99;
+		[Header($"Configs.BagConfig.Headers.Extra")]
 		[Increment(1)]
 		[Range(minShadowDiamondAmount, maxShadowDiamondAmount)]
 		[DefaultValue(0)]
