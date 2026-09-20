@@ -32,7 +32,7 @@ namespace MSStarterBag.Items
         	}
 
 		// You can right click the item
-        public override bool CanRightClick() {
+        	public override bool CanRightClick() {
 			return true;
 		}
 
@@ -92,6 +92,9 @@ namespace MSStarterBag.Items
 
 			// Add all the items from the list
 			foreach (Item item in storage) player.QuickSpawnItem(Item.GetSource_Loot(), item);
+
+                        // Clear the list
+                        storage.Clear();
 
 			// Remove the 'bag' item
 			Item.TurnToAir();

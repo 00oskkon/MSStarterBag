@@ -1,6 +1,6 @@
 displayName = Magic Storage Starter Bag
 author = Oskarien
-version = 3.1
+version = 3.2
 hideCode = false
 hideResources = false
 includeSource = true
